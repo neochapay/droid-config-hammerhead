@@ -18,6 +18,10 @@
 %define community_adaptation 1
 
 Provides: ofono-configs
+#provide closed sources packages - needed for correct build
+Provides: obexd-calldata-provider
+Provides: obexd-contentfilter-helper
+
 %include droid-configs-device/droid-configs.inc
 
 
